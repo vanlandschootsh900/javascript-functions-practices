@@ -1,4 +1,4 @@
-// Your first and last name
+// Shay VanLandchoot
 // 14 APR 2026
 // Parameters & Arguments Practice
 
@@ -10,12 +10,32 @@
 // Call the function and use two arguments -- one for the firstName, the other for the home school
 // Use the alert ( ) method to display your template string in a pop-up window
 
+function nameAndSchool(firstname,homeschool){
+    alert((`${firstname} gose to ${homeschool} for school`));
+};
+
+const nam = 'shay';
+const school = 'school';
+
+const part1Output = nameAndSchool(nam,school);
+
+
 
 // PART 2
 // TODO: Write another JS function that takes two parameters -- base and height
 // Function should CALCULATE and RETURN a template string like this: My right triangle has a base of 20 ft., a height of 15 ft., and an area of 150 sq. ft.
 // Call the function and use two arguments -- one for the length of the base, the other for the triangle's height
 // Again, use the alert ( ) method to display your template string in a pop-up window
+
+function calctriangle(base, height){
+    const calc = (base * height) /2
+    alert(`The triangle has a base of ${base} and a height of ${height} so the area would be ${calc}`)
+};
+const tribase = 10;
+const triheight = 6;
+
+const part2Output = calctriangle(tribase, triheight);
+
 
 // PART 3
 // Create a PUBLIC GitHub repo: arguments-parameters-practice
